@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Find the point</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+    <script src="script.js"></script>
+    
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  
+  </head>
+  <body>
+    <div class="geoloc">
+    	<h2 class="titlehead">Find the point</h2>
+    	<hr/>
+
+    	<div class="position">
+    		<span class="lat"></span>
+    		<span class="long"></span>
+    	</div>
+
+		<div class="menu">
+			<blockquote>
+	        	<span class="notice">Choisissez un lieu, et donnez votre téléphone à votre ami. Il devra ensuite trouver le point grâce aux indices lui seront donnés !</span>
+	        </blockquote>
+			<input type="text" placeholder="Où se trouve le point d'arrivée ?" class="form-control where" />
+			<button class="btn btn-hg btn-primary play">
+			  Commencer la chasse au trésor !
+			</button>
+		</div>
+    	<div class="game">
+	    	<img src="images/icons/svg/compas.svg" alt="Compas" class="icon">
+
+	    	<div class="gamestatus"></div>
+			
+			<div class="headgame">
+		    	<span class="youare">Vous êtes à ...</span>
+		    	<span class="distance"></span>
+	    	</div>
+
+	    	<div class="progress">
+	            <div class="progress-bar good"></div>
+	            <div class="progress-bar progress-bar-warning notgood" ></div>
+	        </div>
+
+	        <blockquote>
+	        	<span class="comments">Commencez à vous déplacer ...</span>
+	        </blockquote>
+
+	        <div id="map-canvas"></div>
+		</div>
+    </div>
+  </body>
+</html>

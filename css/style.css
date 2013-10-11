@@ -1,0 +1,91 @@
+    @media screen and (max-width: 1000px){
+      .geoloc{
+      max-width: 100%;
+      margin-left: 20px;
+      margin-right: 20px;
+      position: relative;
+    }
+
+    #map-canvas{
+      width: 100%;
+      height: 550px;
+      margin-bottom: 20px;
+    }
+    }
+
+    @media screen and (min-width: 1000px){
+      .geoloc{
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      }
+
+      #map-canvas{
+      width: 100%;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+    }
+
+
+  .indicator{
+  
+  }
+  .notgood{
+    width:50%;
+    float:left;
+    display:inline-block;
+  }
+  .good{
+    width:50%;
+    float:left;
+    display:inline-block;
+  }
+  .icon{
+    float: left;
+    margin-right: 30px;
+  }
+
+  .distance{
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 7.5em;
+    margin-top: 10px;
+    color: #34495E;
+  }
+
+  .youare{
+    position: absolute;
+    left: 153px;
+  }
+
+  .headgame{
+    height: 135px;
+    display:block;
+  }
+
+  blockquote span{
+    font-size: 2em;
+  }
+
+  .play{
+    width:100%;
+  }
+  
+  .where{
+    margin-bottom: 5px;
+  }
+  
+  .position{
+    display:none;
+  }
+
+  .notice{
+    font-size: 120%;
+  }
+
+  .titlehead{
+    margin-top: 10px;
+  }
